@@ -1,0 +1,122 @@
+$color-body:#ffe0d6;
+$color-button:#f0552e;
+$color-text: #f83200;
+$color-border:#e98151;
+body{
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    background-color: $color-body;
+}
+.row-content{
+    padding: 40px 0px;
+}
+.navbar-brand{
+    color: $color-text;
+    font-family: Lobster, "cursive";
+    font-size: 1.9em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    img{
+        height: 100px;
+        width: 100px;
+    }
+}
+.nav-link {
+    color: black;
+    
+}
+.bg-1{
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: $color-body;
+    .menu{
+        background-color: rgba($color: #000000, $alpha: 0);
+        
+    }
+    
+    .intro{
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%,-50%);
+        line-height: 30px;
+        h1{
+            font-weight: 700;
+            letter-spacing: 5px;
+        }
+        button{
+            text-transform: capitalize;
+            margin-top: 30px;
+            background-color: $color-button;
+            color: white;
+            border: $color-button 2px solid;
+        }
+        button:hover{
+            font-weight: 600;
+        }
+        button:nth-child(2){
+            background-color: rgba($color: #000000, $alpha: 0);
+            border: 2px solid $color-button;
+            color: $color-button;
+        }
+    }
+}
+@media only screen and (max-width: 993px) {
+    .navbar{
+        padding: 0;
+        text-align: center;
+        
+    }
+    li{
+      background-color: $color-body;
+      position: relative;
+      width: 100%;
+      margin: 0;
+      z-index: 999;
+    }
+  }
+  .bg-2{
+      background-image: linear-gradient(to bottom,$color-body,$color-body,$color-body,white);
+        padding-bottom: 50px;
+      p{
+        font-size: 0.9em;
+        width: 80%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .icon-text{
+        
+        i{
+            font-size: 3.9em;
+            color: $color-button;
+            padding-bottom: 50px;
+        }
+    }
+    }
+    //this is for the range slide button ***start here***
+    .slidecontainer {
+        width: 100%; /* Width of the outside container */
+      }
+      
+      /* The slider itself */
+      .slider {
+        -webkit-appearance: none;  /* Override default CSS styles */
+        appearance: none;
+        width: 100%; /* Full-width */
+        height: 25px; /* Specified height */
+        background: #d3d3d3; /* Grey background */
+        outline: none; /* Remove outline */
+        opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+        -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+        transition: opacity .2s;
+      }
+      
+      /* Mouse-over effects */
+      .slider:hover {
+        opacity: 1; /* Fully shown on mouse-over */
+      }
+    //***ends here***
