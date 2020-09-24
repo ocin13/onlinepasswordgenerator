@@ -1,7 +1,7 @@
 $color-body:#ffe0d6;
 $color-button:#f0552e;
 $color-text: #f83200;
-$color-border:#e98151;
+$color-border:#f88853;
 body{
     text-transform: capitalize;
     margin: 0;
@@ -100,23 +100,83 @@ body{
     //this is for the range slide button ***start here***
     .slidecontainer {
         width: 100%; /* Width of the outside container */
-      }
+        position: relative;
+    }
       
       /* The slider itself */
       .slider {
         -webkit-appearance: none;  /* Override default CSS styles */
-        appearance: none;
-        width: 100%; /* Full-width */
-        height: 25px; /* Specified height */
-        background: #d3d3d3; /* Grey background */
+        width: 80%; /* Full-width */
+        height: 15px; /* Specified height */
+        background: #f7ae9c; /* Grey background */
         outline: none; /* Remove outline */
         opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-        -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-        transition: opacity .2s;
+        transition: all ease-in-out 300ms;
       }
       
       /* Mouse-over effects */
       .slider:hover {
         opacity: 1; /* Fully shown on mouse-over */
       }
+      //hide the selector
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 40px;
+        z-index: 999;
+        height: 50px;
+        border: 0;
+        border-radius: 50%;
+        background: url('/img/lock.png');
+        background-size: cover;
+        
+        cursor: pointer;
+      }
+      
+      .slider::-moz-range-thumb {
+        width: 40px;
+        z-index: 999;
+        height: 50px;
+        border: 0;
+        border-radius: 50%;
+        background: url('/img/lock.png');
+        background-size: cover;
+        
+        cursor: pointer;
+      }
     //***ends here***
+//background 03
+.bg-3{
+    background-color: white;
+    .header-3{
+
+        margin-bottom: 80px;
+    }
+    .setup-tab{
+        background-color: $color-body;
+        border: 2px solid $color-border;
+        border-radius: 5px;
+        padding-bottom: 30px;
+        .tab-header{
+            width: 100;
+            background-image: linear-gradient(to right,$color-button,$color-border);;
+            color: white;
+            font-weight: 600;
+        }
+        button{
+            background-color: $color-button;
+            border: 1px solid $color-button;
+            color: white;
+            font-weight: 400;
+        }
+        button:hover{
+            background-color: rgb(250, 110, 54);
+            color: white;
+        }
+        input{
+            border: 2px solid $color-border;
+            border-radius: 5px;
+            color: $color-text;
+        }
+    }
+}

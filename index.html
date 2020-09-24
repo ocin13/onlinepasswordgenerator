@@ -86,57 +86,91 @@
           </div>
         </div>
         <div class="row row-content bg-3 text-center">
-          <div class="col-12 text-center">
+          <div class="col-12 text-center header-3">
             <h1>generate your passwords now</h1>
-            <p>enter a name and a pin number of 4 digits in order to generate your
+            <p class="d-none d-sm-block">enter a name and a pin number of 4 digits in order to generate your
                passwords dont forget to check for the additional otions</p>
           </div>
-          <div class="col-10">
-            <div class="row">
+          <div class="col-10 mx-auto setup-tab">
+            <div class="row py-3 tab-header">
               <div class="col-6">
                 <h3 class="password-0">xxxxxxxx</h3>
               </div>
               <div class="col-6">
-                <button class="btn btn-success btn-sm">copy password</button>
+                <button class="btn btn-sm">copy password</button>
               </div>
             </div>
-            <div class="row">
-              <div class="col-6">
-                <label for="name">name:</label>
-                <input type="text" class="form-cotrol" id="name" placeholder="name">
+            <div class="row py-3">
+              <div class="col-12 col-sm-6">
+                <label class="form-label" for="name">choose name:</label>
+                <input type="text" class="form-cotrol" id="name" placeholder="Your Name">
               </div>
-              <div class="col-6">
-                <label for="pin">choose pin:</label>
-                <input type="text" class="form-cotrol" id="pin" placeholder="your pin">
+              <div class="col-12 col-sm-6">
+                <label class="form-label" for="pin">choose pin :</label>
+                <input type="text" class="form-cotrol" id="pin" placeholder="Your Pin">
               </div>
             </div>
-            <div class="row">
-              <div class="col-2">
+            <div class="row py-3">
+              <div class="col-6 col-sm-2">
                 <label class="checkbox-inline"><input type="checkbox" value="">use degits</label>
               </div>
-              <div class="col-2">
+              <div class="col-6 col-sm-2">
                 <label class="checkbox-inline"><input type="checkbox" value="">use symbols</label>
               </div>
-              <div class="col-2">
-                <label class="checkbox-inline"><input type="checkbox" value="">use uppercase</label>
+              <div class="col-6 col-sm-2">
+                <label class="checkbox-inline"><input type="checkbox" value="">useUppercase</label>
               </div>
-              <div class="col-2">
-                <label class="checkbox-inline"><input type="checkbox" value="">uselowercase</label>
+              <div class="col-6 col-sm-2">
+                <label class="checkbox-inline"><input type="checkbox" value="">useLowercase</label>
               </div>
-              <div class="col-2">
+              <div class="col-6 col-sm-2">
                 <label class="checkbox-inline"><input type="checkbox" value="">use unique option <span>warning</span></label>
               </div>
-              <div class="col-2">
+              <div class="col-6 col-sm-2">
                 <label class="checkbox-inline"><input type="checkbox" value="">avoid special caracteres</label>
               </div>
             </div>
-            <div class="row">
+            <div class="row py-3">
               <div class="slidecontainer">
-                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                <h3>Lenght:</h3>
+                <input type="range" min="1" max="24" value="50" class="slider" id="myRange">
+                <div id="selector">
+                  <div id="selectBtn"></div>
+                  <div id="selectValue"></div>
+                </div>
               </div>
             </div>
-            <div class="row">
-              <button class="btn btn-success btn-lg">generate password</button>
+            <div class="row py-3 mb-3">
+              <button class="btn  btn-lg mx-auto">Generate Password</button>
+            </div>
+            <div class="row py-3">
+              <div class="col-12 col-sm-6">
+                <label class="form-label" for="facebook">facebook:</label>
+                <p class="sub-pass" id="facebook">XXXX-XXXX-XXXXXX</p>
+                <button class="btn btn-sm">copy password</button>
+              </div>
+              <div class="col-12 col-sm-6">
+                <label class="form-label" for="amazon">amazon :</label>
+              <p class="sub-pass" id="amazon">XXXX-XXXX-XXXXXX</p>
+                <button class="btn btn-sm">copy password</button>
+              </div>
+            </div>
+            <div class="row py-3">
+              <div class="col-12 col-sm-6">
+                <label class="form-label" for="instegram">instegram:</label>
+                <p class="sub-pass" id="instegram">XXXX-XXXX-XXXXXX</p>
+                <button class="btn btn-sm">copy password</button>
+              </div>
+              <div class="col-12 col-sm-6">
+                <label class="form-label" for="google">google :</label>
+                <p class="sub-pass" id="google">XXXX-XXXX-XXXXXX</p>
+                <button class="btn btn-sm">copy password</button>
+              </div>
+            </div>
+            <div class="row py-3">
+              <div class="col-3 mx-auto mt-3">
+                <button type="button" id="addAccount" class="btn btn-sm">Add</button>
+              </div>
             </div>
           </div>
         </div>
