@@ -160,12 +160,13 @@ body {
       width: 70%; }
   .bg-4 img {
     height: 500px;
-    width: 80%;
-    box-shadow: gray 3px 3px 8px;
+    width: 100%;
     margin-bottom: 30px; }
   .bg-4 .description-1 {
     position: relative;
     padding: 60px 50px; }
+    .bg-4 .description-1 h3, .bg-4 .description-1 p {
+      margin-top: 40px; }
     .bg-4 .description-1 .triangle {
       height: 50px;
       width: 50px;
@@ -175,6 +176,9 @@ body {
       z-index: 3;
       transform: rotate(45deg);
       background-color: #ffe0d6; }
+    .bg-4 .description-1 img {
+      height: 700px;
+      width: 100%; }
     .bg-4 .description-1 p {
       line-height: 50px; }
   .bg-4 .description-2 {
@@ -214,7 +218,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    filter: blur(4px); }
+    filter: blur(5px); }
   .bg-5 h1, .bg-5 h4 {
     text-shadow: white 3px 3px 6px;
     font-weight: 700;

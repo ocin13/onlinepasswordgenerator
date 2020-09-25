@@ -94,7 +94,7 @@
           <div class="col-10 mx-auto setup-tab">
             <div class="row py-3 tab-header">
               <div class="col-6">
-                <h3 class="password-0">xxxxxxxx</h3>
+                <h3 id="defaultPssd" class="password-0">xxxxxxxx</h3>
               </div>
               <div class="col-6">
                 <button class="btn btn-sm">copy password</button>
@@ -103,11 +103,11 @@
             <div class="row py-3">
               <div class="col-12 col-sm-6">
                 <label class="form-label" for="name">choose name:</label>
-                <input type="text" class="form-cotrol" id="name" placeholder="Your Name">
+                <input id="name" type="text" class="form-cotrol"  placeholder="Your Name">
               </div>
               <div class="col-12 col-sm-6">
                 <label class="form-label" for="pin">choose pin :</label>
-                <input type="text" class="form-cotrol" id="pin" placeholder="Your Pin">
+                <input id="pin" type="text" class="form-cotrol"  placeholder="Your Pin">
               </div>
             </div>
             <div class="row py-3">
@@ -141,29 +141,29 @@
               </div>
             </div>
             <div class="row py-3 mb-3">
-              <button class="btn  btn-lg mx-auto">Generate Password</button>
+              <button id="generate" class="btn  btn-lg mx-auto">Generate Password</button>
+            </div>
+            <div id="accounts" class="row py-3">
+              <div class="col-12 col-sm-6">
+                <label class="form-label account" for="facebook">facebook:</label>
+                <p class="accountPssd" id="facebook">XXXX-XXXX-XXXXXX</p>
+                <button class="btn btn-sm">copy password</button>
+              </div>
+              <div class="col-12 col-sm-6">
+                <label class="form-label account" for="amazon">amazon :</label>
+              <p class="accountPssd" id="amazon">XXXX-XXXX-XXXXXX</p>
+                <button class="btn btn-sm">copy password</button>
+              </div>
             </div>
             <div class="row py-3">
               <div class="col-12 col-sm-6">
-                <label class="form-label" for="facebook">facebook:</label>
-                <p class="sub-pass" id="facebook">XXXX-XXXX-XXXXXX</p>
+                <label class="form-label account" for="instegram">instegram:</label>
+                <p class="accountPssd" id="instegram">XXXX-XXXX-XXXXXX</p>
                 <button class="btn btn-sm">copy password</button>
               </div>
               <div class="col-12 col-sm-6">
-                <label class="form-label" for="amazon">amazon :</label>
-              <p class="sub-pass" id="amazon">XXXX-XXXX-XXXXXX</p>
-                <button class="btn btn-sm">copy password</button>
-              </div>
-            </div>
-            <div class="row py-3">
-              <div class="col-12 col-sm-6">
-                <label class="form-label" for="instegram">instegram:</label>
-                <p class="sub-pass" id="instegram">XXXX-XXXX-XXXXXX</p>
-                <button class="btn btn-sm">copy password</button>
-              </div>
-              <div class="col-12 col-sm-6">
-                <label class="form-label" for="google">google :</label>
-                <p class="sub-pass" id="google">XXXX-XXXX-XXXXXX</p>
+                <label class="form-label account" for="google">google :</label>
+                <p class="accountPssd" id="google">XXXX-XXXX-XXXXXX</p>
                 <button class="btn btn-sm">copy password</button>
               </div>
             </div>
