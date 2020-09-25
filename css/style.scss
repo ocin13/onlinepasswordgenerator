@@ -180,3 +180,107 @@ body{
         }
     }
 }
+.bg-4{
+    
+   padding-top: 40px;
+    .header-4{
+        margin-bottom: 40px;
+        h1{
+            margin-bottom: 30px;
+        }
+        p{
+            width: 70%;
+        }
+    }
+    img{
+        height: 500px;
+        width: 80%;
+        box-shadow: gray 3px 3px 8px;
+        margin-bottom: 30px;
+    }
+    .description-1{
+        position: relative;
+        padding: 60px 50px;
+        .triangle{
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            left: 50%;
+            bottom: -15px;
+            z-index: 3;
+            transform: rotate(45deg);
+            background-color:$color-body;
+        }
+        p{
+            line-height: 50px;
+        }
+    }
+    .description-2{
+        position: relative;
+        padding: 60px 50px;
+        background-color: rgb(245, 212, 202);
+        .triangle{
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            left: 50%;
+            bottom: -15px;
+            z-index: 3;
+            transform: rotate(45deg);
+            background-color: rgb(245, 212, 202);
+        }
+        p{
+            line-height: 30px;
+        }
+    }
+    .description-3{
+        padding: 60px 50px;
+        background-color: rgb(255, 198, 181);
+       
+        p{
+            line-height: 50px;
+        }
+    }
+}
+.bg-5{
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    overflow-y: hidden;
+    .img-bg-5{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(https://cdn.pixabay.com/photo/2018/07/01/13/28/access-3509495_1280.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        filter: blur(4px);
+    }
+    
+    h1, h4{
+        text-shadow: white 3px 3px 6px;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+}
+.bg-6{
+    background-image: linear-gradient(to bottom,rgb(37, 37, 37),black);
+    color: white;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a, i{
+        transition: all ease-in-out 300ms;
+    }
+    a:hover{
+        color: $color-button;
+    }
+    a:hover i{
+        color: $color-button;
+    }
+}

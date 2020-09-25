@@ -149,3 +149,86 @@ body {
       border: 2px solid #f88853;
       border-radius: 5px;
       color: #f83200; }
+
+.bg-4 {
+  padding-top: 40px; }
+  .bg-4 .header-4 {
+    margin-bottom: 40px; }
+    .bg-4 .header-4 h1 {
+      margin-bottom: 30px; }
+    .bg-4 .header-4 p {
+      width: 70%; }
+  .bg-4 img {
+    height: 500px;
+    width: 80%;
+    box-shadow: gray 3px 3px 8px;
+    margin-bottom: 30px; }
+  .bg-4 .description-1 {
+    position: relative;
+    padding: 60px 50px; }
+    .bg-4 .description-1 .triangle {
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      left: 50%;
+      bottom: -15px;
+      z-index: 3;
+      transform: rotate(45deg);
+      background-color: #ffe0d6; }
+    .bg-4 .description-1 p {
+      line-height: 50px; }
+  .bg-4 .description-2 {
+    position: relative;
+    padding: 60px 50px;
+    background-color: #f5d4ca; }
+    .bg-4 .description-2 .triangle {
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      left: 50%;
+      bottom: -15px;
+      z-index: 3;
+      transform: rotate(45deg);
+      background-color: #f5d4ca; }
+    .bg-4 .description-2 p {
+      line-height: 30px; }
+  .bg-4 .description-3 {
+    padding: 60px 50px;
+    background-color: #ffc6b5; }
+    .bg-4 .description-3 p {
+      line-height: 50px; }
+
+.bg-5 {
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+  overflow-y: hidden; }
+  .bg-5 .img-bg-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2018/07/01/13/28/access-3509495_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(4px); }
+  .bg-5 h1, .bg-5 h4 {
+    text-shadow: white 3px 3px 6px;
+    font-weight: 700;
+    margin-top: 20px; }
+
+.bg-6 {
+  background-image: linear-gradient(to bottom, #252525, black);
+  color: white; }
+  .bg-6 a {
+    text-decoration: none;
+    color: white; }
+  .bg-6 a, .bg-6 i {
+    transition: all ease-in-out 300ms; }
+  .bg-6 a:hover {
+    color: #f0552e; }
+  .bg-6 a:hover i {
+    color: #f0552e; }
