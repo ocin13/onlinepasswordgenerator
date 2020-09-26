@@ -54,6 +54,13 @@ body{
             background-color: $color-button;
             color: white;
             border: $color-button 2px solid;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            #quick{
+                color: $color-button;
+            }
         }
         button:hover{
             font-weight: 600;

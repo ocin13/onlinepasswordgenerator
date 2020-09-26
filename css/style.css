@@ -44,6 +44,11 @@ body {
       background-color: #f0552e;
       color: white;
       border: #f0552e 2px solid; }
+      .bg-1 .intro button a {
+        text-decoration: none;
+        color: white; }
+      .bg-1 .intro button #quick {
+        color: #f0552e; }
     .bg-1 .intro button:hover {
       font-weight: 600; }
     .bg-1 .intro button:nth-child(2) {
