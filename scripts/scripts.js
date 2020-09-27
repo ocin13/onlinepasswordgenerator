@@ -1,3 +1,5 @@
+//const { get } = require("jquery");
+
 //slider button
 let slider = document.getElementById("myRange");
 let valueSlc = document.getElementById("selectValue");
@@ -11,7 +13,14 @@ let name = document.getElementById("name");
 let pin = document.getElementById("pin");
 let generateBtn = document.getElementById("generate");
 let defautPssd = document.getElementById("defaultPssd");
-
+let accounts = document.querySelectorAll(".accountPssd");
+let accountsName = document.querySelectorAll(".account");
+let addedAcc = document.getElementById("added");
+let addBtn = document.getElementById("addAccount");
+let newAccountName = document.getElementById("nameAcc");
+//events
+generateBtn.addEventListener("click", generatePassword);
+addBtn.addEventListener("click", addAccount);
 //encrypt the letters
 function encryptWord(word){
   let n = word.length;
@@ -65,17 +74,24 @@ function symbolAcc(pin){
   
 }
 //function for basic pssd
-generateBtn.addEventListener("click",function(){
+function generatePassword() {
   let symbolFirst = getSymbol();
   let symbolSecond = getSymbol();
   let nameStr = encryptWord(name.value);
   let finalName = nameStr.slice(0,slider.value-4);
   let pinStr = encryptPin(pin.value);
   defautPssd.innerHTML = finalName + symbolFirst + pinStr  + symbolSecond ;
-  let accounts = document.querySelectorAll(".accountPssd");
-  let accountsName = document.querySelectorAll(".account");
+  
   for (var i = 0; i < accounts.length; i++) {
     accounts[i].innerHTML = finalName + symbolAcc(pin.value) + accountsName[i].innerHTML.slice(0,2);
 }
-});
 
+}
+//add account function
+function addAccount(){
+  var elmnt = document.getElementById("accountExp");
+  var cln = elmnt.cloneNode(true);
+  addedAcc.appendChild(cln);
+  let n = accounts.length;
+  document.getElementsByClassName("account")[n].innerHTML = newAccountName.value + ":";
+}

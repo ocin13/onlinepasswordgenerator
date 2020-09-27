@@ -13,13 +13,36 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <title>NuCamp: A Better Way To Camp</title>
+    <title>Hi eden</title>
 </head>
 
 
 
 <body>
     <div class="container-fluid px-0">
+        <!--modal-->
+        <div id="accountModal" class="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">add account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <label for="nameAcc">add account name here:</label>
+                <input type="text" id="nameAcc" class="form-cotrol" placeholder="Accoun Name">
+                
+              </div>
+              <div class="modal-footer">
+                <button id="addAccount" type="button" class="btn btn-primary">add</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end modal-->
         <nav class="navbar navbar-expand-lg navbar-light menu">
             <a class="navbar-brand" href="#"><img src="/img/lock.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -144,7 +167,7 @@
               <button id="generate" class="btn  btn-lg mx-auto">Generate Password</button>
             </div>
             <div id="accounts" class="row py-3">
-              <div class="col-12 col-sm-6">
+              <div id="accountExp" class="col-12 col-sm-6">
                 <label class="form-label account" for="facebook">facebook:</label>
                 <p class="accountPssd" id="facebook">XXXX-XXXX-XXXXXX</p>
                 <button class="btn btn-sm">copy password</button>
@@ -172,7 +195,7 @@
             </div>
             <div class="row py-3">
               <div class="col-3 mx-auto mt-3">
-                <button type="button" id="addAccount" class="btn btn-sm">Add</button>
+                <button type="button" id="add" class="btn btn-sm" data-toggle="modal" data-target="#accountModal">Add</button>
               </div>
             </div>
           </div>
