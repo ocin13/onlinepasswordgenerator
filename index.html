@@ -36,7 +36,7 @@
                 
               </div>
               <div class="modal-footer">
-                <button id="addAccount" type="button" class="btn btn-primary">add</button>
+                <button id="addAccount" type="button" class="btn " data-dismiss="modal">Generate Password</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div>
@@ -117,10 +117,10 @@
           <div class="col-10 mx-auto setup-tab">
             <div class="row py-3 tab-header">
               <div class="col-6">
-                <h3 id="defaultPssd" class="password-0">xxxxxxxx</h3>
+                <h3 id="defaultPssd" class="password-0 copyText">xxxxxxxx</h3>
               </div>
               <div class="col-6">
-                <button class="btn btn-sm">copy password</button>
+                <button class="btn btn-sm copyBtn">copy password</button>
               </div>
             </div>
             <div class="row py-3">
@@ -130,7 +130,7 @@
               </div>
               <div class="col-12 col-sm-6">
                 <label class="form-label" for="pin">choose pin :</label>
-                <input id="pin" type="text" class="form-cotrol"  placeholder="Your Pin">
+                <input id="pin" type="text" class="form-cotrol"  placeholder="Your Pin" maxlength="4">
               </div>
             </div>
             <div class="row py-3">
@@ -167,27 +167,27 @@
               <button id="generate" class="btn  btn-lg mx-auto">Generate Password</button>
             </div>
             <div id="accounts" class="row py-3">
-              <div id="accountExp" class="col-12 col-sm-6">
+              <div id="accountExp" class="col-12 col-sm-6 accounts">
                 <label class="form-label account" for="facebook">facebook:</label>
-                <p class="accountPssd" id="facebook">XXXX-XXXX-XXXXXX</p>
-                <button class="btn btn-sm">copy password</button>
+                <p class="accountPssd copyText" id="facebook">XXXX-XXXX-XXXXXX</p>
+                <button class="btn btn-sm copyBtn">copy password</button>
               </div>
-              <div class="col-12 col-sm-6">
+              <div class="col-12 col-sm-6 accounts">
                 <label class="form-label account" for="amazon">amazon :</label>
-              <p class="accountPssd" id="amazon">XXXX-XXXX-XXXXXX</p>
-                <button class="btn btn-sm">copy password</button>
+              <p class="accountPssd copyText" id="amazon">XXXX-XXXX-XXXXXX</p>
+                <button class="btn btn-sm copyBtn">copy password</button>
               </div>
             </div>
             <div class="row py-3">
-              <div class="col-12 col-sm-6">
+              <div class="col-12 col-sm-6 accounts">
                 <label class="form-label account" for="instegram">instegram:</label>
-                <p class="accountPssd" id="instegram">XXXX-XXXX-XXXXXX</p>
-                <button class="btn btn-sm">copy password</button>
+                <p class="accountPssd copyText" id="instagram">XXXX-XXXX-XXXXXX</p>
+                <button class="btn btn-sm copyBtn" onclick="copy()">copy password</button>
               </div>
-              <div class="col-12 col-sm-6">
+              <div class="col-12 col-sm-6 accounts">
                 <label class="form-label account" for="google">google :</label>
-                <p class="accountPssd" id="google">XXXX-XXXX-XXXXXX</p>
-                <button class="btn btn-sm">copy password</button>
+                <p class="accountPssd copyText" id="google">XXXX-XXXX-XXXXXX</p>
+                <button class="btn btn-sm copyBtn">copy password</button>
               </div>
             </div>
             <div id="added" class="row py-3">

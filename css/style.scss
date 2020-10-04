@@ -297,3 +297,32 @@ body{
         color: $color-button;
     }
 }
+#accountModal{
+    .modal-header{
+        background-color: $color-button;
+        color: white;
+        span{
+            color: white;
+        }
+    }
+    .modal-body{
+        padding: 50px 30px;
+        font-size: 1.6em;
+        text-align: center;
+        font-weight: 500;
+        input{
+            text-align: center;
+        }
+    }
+    .modal-footer{
+        button{
+            border: none;
+            border-radius: 0;
+           
+        }
+        #addAccount{
+            background-color: $color-button;
+            color: white;
+        }
+    }
+}

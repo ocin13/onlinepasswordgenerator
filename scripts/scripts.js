@@ -73,6 +73,18 @@ function symbolAcc(pin){
   return symbols[n];
   
 }
+//add account function
+function addAccount(){
+  var elmnt = document.getElementById("accountExp");
+  var cln = elmnt.cloneNode(true);
+  addedAcc.appendChild(cln);
+  let n = accounts.length;
+  let nameStr = encryptWord(newAccountName.value);
+  let finalNameNew = nameStr.slice(0,slider.value-4);
+  document.querySelectorAll(".account")[n].innerHTML = newAccountName.value + ":";
+  document.querySelectorAll(".accountPssd")[n].innerHTML = finalNameNew + symbolAcc(pin.value) + newAccountName.value.slice(0,2) + symbolAcc(pin.value);
+  document.getElementById("add").style.display = "none";
+}
 //function for basic pssd
 function generatePassword() {
   let symbolFirst = getSymbol();
@@ -87,11 +99,20 @@ function generatePassword() {
 }
 
 }
-//add account function
-function addAccount(){
-  var elmnt = document.getElementById("accountExp");
-  var cln = elmnt.cloneNode(true);
-  addedAcc.appendChild(cln);
-  let n = accounts.length;
-  document.getElementsByClassName("account")[n].innerHTML = newAccountName.value + ":";
+//copy function
+function copy() {
+
+  /* Get the text field */
+  var copyText = document.getElementById("instagram");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
 }
+

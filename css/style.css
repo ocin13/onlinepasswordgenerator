@@ -241,3 +241,25 @@ body {
     color: #f0552e; }
   .bg-6 a:hover i {
     color: #f0552e; }
+
+#accountModal .modal-header {
+  background-color: #f0552e;
+  color: white; }
+  #accountModal .modal-header span {
+    color: white; }
+
+#accountModal .modal-body {
+  padding: 50px 30px;
+  font-size: 1.6em;
+  text-align: center;
+  font-weight: 500; }
+  #accountModal .modal-body input {
+    text-align: center; }
+
+#accountModal .modal-footer button {
+  border: none;
+  border-radius: 0; }
+
+#accountModal .modal-footer #addAccount {
+  background-color: #f0552e;
+  color: white; }
